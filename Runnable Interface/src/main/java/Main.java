@@ -35,7 +35,7 @@ public class Main {
         Thread threadOne = new Thread(one);
         Thread threadTwo = new Thread(two);
         threadOne.start();
-        Thread.sleep(1000);
+        Thread.sleep(10);
         threadTwo.start();
     }
 }
