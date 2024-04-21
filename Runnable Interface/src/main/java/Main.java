@@ -28,8 +28,14 @@ public class Main {
     public static void main(String[] args) throws InterruptedException {
         One one = new One();
         Two two = new Two();
-        one.run();
+//        one.run();
+//        Thread.sleep(1000);
+//        two.run();
+
+        Thread threadOne = new Thread(one);
+        Thread threadTwo = new Thread(two);
+        threadOne.start();
         Thread.sleep(1000);
-        two.run();
+        threadTwo.start();
     }
 }
