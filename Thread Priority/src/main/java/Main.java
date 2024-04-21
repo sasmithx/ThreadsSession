@@ -1,5 +1,3 @@
-package lk.ijse;
-
 public class Main {
     public static void main(String[] args) throws InterruptedException {
         Thread t1 = new Thread(() -> {
@@ -23,7 +21,13 @@ public class Main {
                 throw new RuntimeException(e);
             }
         });
+        t1.setPriority(Thread.MIN_PRIORITY);
+        t1.setPriority(Thread.MAX_PRIORITY);
+        t1.setName("Calculation Thread");
 
+        System.out.println(t1.getPriority());
+        System.out.println(t2.getPriority());
+        System.out.println(t1.getName());
         t1.start();
         try {
             Thread.sleep(10);
