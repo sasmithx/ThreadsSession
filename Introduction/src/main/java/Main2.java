@@ -8,7 +8,7 @@ class MyRunnable implements Runnable {
 
 public class Main2 {
     public static void main(String[] args) {
-//        Create instance of MyRunnable
+//        Create Instance of MyRunnable
         MyRunnable runnable = new MyRunnable();
         Thread thread = new Thread(runnable);
         thread.start();
