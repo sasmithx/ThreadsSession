@@ -3,6 +3,10 @@ class Q{
     public void put(int num){
         this.num = num;
     }
+
+    public void get(){
+        System.out.println(num);
+    }
 }
 
 public class Main {
