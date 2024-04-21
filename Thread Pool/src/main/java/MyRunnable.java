@@ -1,6 +1,6 @@
-public class Main implements Runnable{
+public class MyRunnable implements Runnable{
    private String name;
-   public Main(String name) {
+   public MyRunnable (String name) {
        this.name = name;
    }
 
