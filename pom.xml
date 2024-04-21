@@ -17,6 +17,7 @@
         <module>Synchronized Keyword</module>
         <module>Thread Priority</module>
         <module>interThread-Communication</module>
+        <module>Thread Pool</module>
     </modules>
 
     <properties>
