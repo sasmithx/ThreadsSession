@@ -17,7 +17,7 @@ class Two extends Thread {
             System.out.println("Thread Two");
         }
         try {
-            Thread.sleep(100);
+            Thread.sleep(1000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
@@ -25,12 +25,13 @@ class Two extends Thread {
 }
 
 public class Main {
-    public static void main (String[] args) {
+    public static void main (String[] args) throws InterruptedException {
         System.out.println("Hello World");
 
         One one = new One();
         Two two = new Two();
         one.start();
+        Thread.sleep(10);
         two.start();
     }
 }
